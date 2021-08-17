@@ -100,6 +100,20 @@ position = Vector2( 511.841, 300.08 )
 scale = Vector2( 1.05902, 0.886496 )
 texture = ExtResource( 2 )
 
+[node name="Desbug" type="CheckButton" parent="." groups=[
+"button",
+]]
+visible = false
+margin_top = 0.000549316
+margin_right = 113.0
+margin_bottom = 109.001
+custom_icons/off = ExtResource( 4 )
+custom_icons/on = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="CheckButton" type="CheckButton" parent="." groups=[
 "button",
 ]]
@@ -175,6 +189,8 @@ color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="toggled" from="Desbug" to="." method="_on_CheckButton_toggled"]
 [connection signal="toggled" from="CheckButton" to="." method="_on_CheckButton_toggled"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

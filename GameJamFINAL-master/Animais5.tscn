@@ -12,7 +12,7 @@
 [ext_resource path="res://AssetsMenu/SAirr.tres" type="Texture" id=10]
 [ext_resource path="res://Animais5.gd" type="Script" id=11]
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=1]
 size = 70
 font_data = ExtResource( 9 )
 
@@ -81,6 +81,18 @@ position = Vector2( 511.998, 301.571 )
 scale = Vector2( 1.63578, 1.51163 )
 texture = ExtResource( 3 )
 
+[node name="Debug" type="TextureButton" parent="."]
+visible = false
+margin_left = 110.371
+margin_top = 129.854
+margin_right = 1012.37
+margin_bottom = 1209.85
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="leao" type="TextureButton" parent="."]
 margin_left = 110.371
 margin_top = 129.854
@@ -129,7 +141,7 @@ __meta__ = {
 margin_top = -0.850281
 margin_right = 1025.0
 margin_bottom = 86.1497
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Que animal faz esse som ?"
 align = 1
@@ -204,6 +216,8 @@ anims/Correct = SubResource( 2 )
 anims/Erro = SubResource( 3 )
 anims/Erro3 = SubResource( 4 )
 anims/erroretangulo = SubResource( 5 )
+
+[connection signal="pressed" from="Debug" to="." method="_on_leao_pressed"]
 [connection signal="pressed" from="leao" to="." method="_on_leao_pressed"]
 [connection signal="pressed" from="Cabra" to="." method="_on_Cabra_pressed"]
 [connection signal="pressed" from="vaca" to="." method="_on_vaca_pressed"]

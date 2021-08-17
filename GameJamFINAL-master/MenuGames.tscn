@@ -71,16 +71,26 @@ tracks/0/keys = {
 script = ExtResource( 2 )
 
 [node name="BackgroundMinigames" type="Sprite" parent="."]
-position = Vector2( 512.733, 299.133 )
-scale = Vector2( 1.05718, 0.8837 )
+position = Vector2( 509.76, 299.728 )
+scale = Vector2( 1.06087, 0.88897 )
 texture = ExtResource( 1 )
+
+[node name="CheckButton2" type="CheckButton" parent="." groups=[
+"button",
+]]
+visible = false
+margin_right = 113.0
+margin_bottom = 108.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CheckButton" type="CheckButton" parent="." groups=[
 "button",
 ]]
-margin_top = 0.000549316
 margin_right = 113.0
-margin_bottom = 108.001
+margin_bottom = 108.0
 custom_icons/off = ExtResource( 3 )
 custom_icons/on = ExtResource( 4 )
 flat = true
@@ -145,15 +155,17 @@ anims/Pagesq = SubResource( 3 )
 "anims/Transição" = SubResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-margin_left = -9.0
-margin_right = 1030.0
-margin_bottom = 605.0
+margin_left = -3.17065
+margin_top = -1.18835
+margin_right = 1035.83
+margin_bottom = 603.812
 mouse_filter = 2
-color = Color( 0, 0, 0, 1 )
+color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="toggled" from="CheckButton2" to="." method="_on_CheckButton_toggled"]
 [connection signal="toggled" from="CheckButton" to="." method="_on_CheckButton_toggled"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

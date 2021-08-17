@@ -101,6 +101,18 @@ texture = ExtResource( 2 )
 position = Vector2( 524.788, 310.693 )
 texture = SubResource( 2 )
 
+[node name="Debug" type="TextureButton" parent="."]
+visible = false
+margin_left = 55.1899
+margin_top = 469.887
+margin_right = 556.19
+margin_bottom = 727.887
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Circulo" type="TextureButton" parent="."]
 margin_left = 55.1899
 margin_top = 469.887
@@ -174,6 +186,8 @@ visible = false
 position = Vector2( 635.798, 246.278 )
 scale = Vector2( 1.09534, 1.22033 )
 texture = ExtResource( 9 )
+
+[connection signal="pressed" from="Debug" to="." method="_on_Circulo_pressed"]
 [connection signal="pressed" from="Circulo" to="." method="_on_Circulo_pressed"]
 [connection signal="pressed" from="quadrado" to="." method="_on_quadrado_pressed"]
 [connection signal="pressed" from="retangulo" to="." method="_on_retangulo_pressed"]

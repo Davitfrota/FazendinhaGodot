@@ -81,6 +81,18 @@ position = Vector2( 511.998, 301.571 )
 scale = Vector2( 1.63578, 1.51163 )
 texture = ExtResource( 3 )
 
+[node name="Debug" type="TextureButton" parent="."]
+visible = false
+margin_left = 110.0
+margin_top = 130.0
+margin_right = 514.0
+margin_bottom = 558.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Cobra" type="TextureButton" parent="."]
 margin_left = 110.0
 margin_top = 130.0
@@ -204,6 +216,8 @@ anims/Correct = SubResource( 2 )
 anims/Erro = SubResource( 3 )
 anims/Erro3 = SubResource( 4 )
 anims/erroretangulo = SubResource( 5 )
+
+[connection signal="pressed" from="Debug" to="." method="_on_Cobra_pressed"]
 [connection signal="pressed" from="Cobra" to="." method="_on_Cobra_pressed"]
 [connection signal="pressed" from="vaca" to="." method="_on_vaca_pressed"]
 [connection signal="pressed" from="bird" to="." method="_on_bird_pressed"]

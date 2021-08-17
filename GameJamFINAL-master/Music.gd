@@ -32,7 +32,7 @@ func Tela_music():
 func Mute():
 	$Music.volume_db = -100
 func desMute():
-	$Music.volume_db = 0
+	$Music.volume_db = -10
 
 func Baixar():
 	$Music.volume_db = -10
