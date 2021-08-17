@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Leao.wav-65aaf6faa7d80c5b97a54bfea5694c4d.sample"
+
+[deps]
+
+source_file="res://Assets/Audios/Leao.wav"
+dest_files=[ "res://.import/Leao.wav-65aaf6faa7d80c5b97a54bfea5694c4d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

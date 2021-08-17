@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Papagaio (1).wav-5408a8cf5de9ff8e21551ff4ce886f89.sample"
+
+[deps]
+
+source_file="res://Assets/Audios/Papagaio (1).wav"
+dest_files=[ "res://.import/Papagaio (1).wav-5408a8cf5de9ff8e21551ff4ce886f89.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

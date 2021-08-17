@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/relaxing_country_music_farm_game_music_by_w_o_w_sound_1215722938723866648.ogg-54979a6683f0739cb8f900840fb01dc2.oggstr"
+
+[deps]
+
+source_file="res://relaxing_country_music_farm_game_music_by_w_o_w_sound_1215722938723866648.ogg"
+dest_files=[ "res://.import/relaxing_country_music_farm_game_music_by_w_o_w_sound_1215722938723866648.ogg-54979a6683f0739cb8f900840fb01dc2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

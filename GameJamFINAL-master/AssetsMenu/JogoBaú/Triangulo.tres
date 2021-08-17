@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=2]
+
+[ext_resource path="res://AssetsMenu/JogoBaú/kisspng-triangle-yellow-pyramid-pattern-triangle-png-photo-5a7202466ed098.3534744415174211264539.png" type="Texture" id=1]
+
+[resource]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 195, 35, 510, 442 )

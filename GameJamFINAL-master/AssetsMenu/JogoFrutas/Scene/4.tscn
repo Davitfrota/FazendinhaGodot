@@ -1,0 +1,233 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://AssetsMenu/JogoFrutas/Habede Font by 7NTypes.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://AssetsMenu/JogoFrutas/banana.png" type="Texture" id=2]
+[ext_resource path="res://AssetsMenu/JogoFrutas/Scene/4.gd" type="Script" id=3]
+[ext_resource path="res://AssetsMenu/SAirr.tres" type="Texture" id=4]
+[ext_resource path="res://AssetsMenu/JogoFrutas/thumbnail-2.png" type="Texture" id=5]
+[ext_resource path="res://AssetsMenu/images.png" type="Texture" id=6]
+[ext_resource path="res://AssetsMenu/Correct2.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+font_data = ExtResource( 1 )
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/numeros.png-7f17ee073bb57f65d129276cc1a5e532.stex"
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = SubResource( 2 )
+region = Rect2( 96, 16, 38, 72 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = SubResource( 2 )
+region = Rect2( 139, 16, 47, 72 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = SubResource( 2 )
+region = Rect2( 191, 15, 45, 73 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = SubResource( 2 )
+region = Rect2( 240, 16, 55, 72 )
+
+[sub_resource type="Animation" id=7]
+resource_name = "Correct"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Correct2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+
+[sub_resource type="Animation" id=8]
+tracks/0/type = "value"
+tracks/0/path = NodePath("XMaior:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+
+[sub_resource type="Animation" id=9]
+tracks/0/type = "value"
+tracks/0/path = NodePath("images2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=10]
+tracks/0/type = "value"
+tracks/0/path = NodePath("images3:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="thumbnail-2" type="Sprite" parent="."]
+position = Vector2( 512.5, 300.5 )
+scale = Vector2( 1.46429, 0.858571 )
+texture = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 601.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="banana" type="Sprite" parent="."]
+position = Vector2( 230.292, 324.07 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_top = -0.850281
+margin_right = 1025.0
+margin_bottom = 86.1497
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Quantas bananas o fazendeiro tem ?"
+align = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureButton" parent="."]
+margin_left = 614.266
+margin_top = 180.401
+margin_right = 654.266
+margin_bottom = 252.401
+rect_scale = Vector2( 2, 2 )
+texture_normal = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="TextureButton" parent="."]
+margin_left = 821.087
+margin_top = 173.021
+margin_right = 868.087
+margin_bottom = 245.021
+rect_scale = Vector2( 2, 2 )
+texture_normal = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="TextureButton" parent="."]
+margin_left = 622.815
+margin_top = 370.116
+margin_right = 667.815
+margin_bottom = 443.116
+rect_scale = Vector2( 2, 2 )
+texture_normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="TextureButton" parent="."]
+margin_left = 819.546
+margin_top = 370.022
+margin_right = 874.546
+margin_bottom = 442.022
+rect_scale = Vector2( 2, 2 )
+texture_normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 492.0
+margin_right = 1025.0
+margin_bottom = 601.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer"]
+margin_left = 462.0
+margin_top = 4.0
+margin_right = 562.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="images" type="Sprite" parent="."]
+visible = false
+position = Vector2( 674.91, 243.129 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 6 )
+
+[node name="images3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 883.214, 239.807 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 6 )
+
+[node name="images2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 684.246, 437.359 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Correct = SubResource( 7 )
+anims/Erro = SubResource( 8 )
+anims/Erro3 = SubResource( 9 )
+anims/erroretangulo = SubResource( 10 )
+
+[node name="XMaior" type="Sprite" parent="."]
+visible = false
+position = Vector2( 546.095, 301.065 )
+scale = Vector2( 3.09772, 3.17406 )
+texture = ExtResource( 6 )
+
+[node name="Correct2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 635.798, 246.278 )
+scale = Vector2( 1.09534, 1.22033 )
+texture = ExtResource( 7 )
+[connection signal="pressed" from="1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureButton" to="." method="_on_TextureButton_pressed"]

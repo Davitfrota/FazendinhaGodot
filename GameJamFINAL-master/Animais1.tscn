@@ -1,0 +1,212 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://AssetsMenu/SAirr.tres" type="Texture" id=1]
+[ext_resource path="res://AssetsMenu/JogoFrutas/Habede Font by 7NTypes.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://AssetsMenu/images.png" type="Texture" id=3]
+[ext_resource path="res://AssetsMenu/Sound.tres" type="Texture" id=4]
+[ext_resource path="res://AssetsMenu/Correct2.png" type="Texture" id=5]
+[ext_resource path="res://AseetsJogo/AnimaisBAck.jpg" type="Texture" id=6]
+[ext_resource path="res://Animais1.gd" type="Script" id=7]
+[ext_resource path="res://ANIMALS/desenho-de-golfinho-em-pe_43633-33.png" type="Texture" id=8]
+[ext_resource path="res://ANIMALS/desenho-de-vaca-isolado-no-branco_43633-7182.png" type="Texture" id=9]
+[ext_resource path="res://ANIMALS/BabyCabra.png" type="Texture" id=10]
+[ext_resource path="res://ANIMALS/BABYLION.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "Correct"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Correct2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+
+[sub_resource type="Animation" id=3]
+tracks/0/type = "value"
+tracks/0/path = NodePath("XMaior:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("images2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=5]
+tracks/0/type = "value"
+tracks/0/path = NodePath("images3:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+
+[node name="Animais1" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="AnimaisBAck" type="Sprite" parent="."]
+position = Vector2( 511.998, 301.571 )
+scale = Vector2( 1.63578, 1.51163 )
+texture = ExtResource( 6 )
+
+[node name="bird" type="TextureButton" parent="."]
+margin_left = 110.371
+margin_top = 129.854
+margin_right = 1012.37
+margin_bottom = 1209.85
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vaca" type="TextureButton" parent="."]
+margin_left = 107.676
+margin_top = 364.378
+margin_right = 733.676
+margin_bottom = 919.378
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Golf" type="TextureButton" parent="."]
+margin_left = 758.499
+margin_top = 130.245
+margin_right = 1397.5
+margin_bottom = 769.245
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leao" type="TextureButton" parent="."]
+margin_left = 760.0
+margin_top = 348.0
+margin_right = 1560.0
+margin_bottom = 1148.0
+rect_scale = Vector2( 0.25, 0.25 )
+texture_normal = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = -0.850281
+margin_right = 1025.0
+margin_bottom = 86.1497
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Que animal faz esse som ?"
+align = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 492.88
+margin_right = 1025.0
+margin_bottom = 601.88
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sair" type="TextureButton" parent="CenterContainer"]
+margin_left = 462.0
+margin_top = 4.0
+margin_right = 562.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 444.502
+margin_top = 273.642
+margin_right = 544.502
+margin_bottom = 373.642
+rect_scale = Vector2( 1.5, 1.5 )
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="images" type="Sprite" parent="."]
+visible = false
+position = Vector2( 886.803, 241.01 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 3 )
+
+[node name="images3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 681.916, 437.927 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 3 )
+
+[node name="images2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 887.663, 438.418 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 3 )
+
+[node name="XMaior" type="Sprite" parent="."]
+visible = false
+position = Vector2( 546.095, 301.065 )
+scale = Vector2( 3.09772, 3.17406 )
+texture = ExtResource( 3 )
+
+[node name="Correct2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 635.798, 246.278 )
+scale = Vector2( 1.09534, 1.22033 )
+texture = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Correct = SubResource( 2 )
+anims/Erro = SubResource( 3 )
+anims/Erro3 = SubResource( 4 )
+anims/erroretangulo = SubResource( 5 )
+[connection signal="pressed" from="bird" to="." method="_on_bird_pressed"]
+[connection signal="pressed" from="vaca" to="." method="_on_vaca_pressed"]
+[connection signal="pressed" from="Golf" to="." method="_on_Golf_pressed"]
+[connection signal="pressed" from="leao" to="." method="_on_leao_pressed"]
+[connection signal="pressed" from="CenterContainer/Sair" to="." method="_on_Sair_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

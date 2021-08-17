@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Vaquita1.wav-88d8f6b44ce63607b0deac77585cc28f.sample"
+
+[deps]
+
+source_file="res://Assets/Audios/Vaquita1.wav"
+dest_files=[ "res://.import/Vaquita1.wav-88d8f6b44ce63607b0deac77585cc28f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

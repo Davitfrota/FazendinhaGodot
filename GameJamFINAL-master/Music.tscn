@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Music.gd" type="Script" id=1]
+[ext_resource path="res://relaxing_country_music_farm_game_music_by_w_o_w_sound_1215722938723866648.ogg" type="AudioStream" id=2]
+
+[node name="Music" type="Node2D"]
+pause_mode = 2
+position = Vector2( 0, -1 )
+script = ExtResource( 1 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true

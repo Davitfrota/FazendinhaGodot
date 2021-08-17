@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/isabella_s_lullaby_the_promised_neverland_lofi_-7433177121852572551.ogg-b0f4ff2b13a86d6e123579314c781c96.oggstr"
+
+[deps]
+
+source_file="res://isabella_s_lullaby_the_promised_neverland_lofi_-7433177121852572551.ogg"
+dest_files=[ "res://.import/isabella_s_lullaby_the_promised_neverland_lofi_-7433177121852572551.ogg-b0f4ff2b13a86d6e123579314c781c96.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,180 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://AssetsMenu/JogoBaú/life-on-farm-inside-barn-vector-30694651.png" type="Texture" id=1]
+[ext_resource path="res://AssetsMenu/JogoBaú/life-on-farm-inside-barn-vector-30694651.jpg" type="Texture" id=2]
+[ext_resource path="res://AssetsMenu/JogoBaú/Key/KeyCirculo.tres" type="Texture" id=3]
+[ext_resource path="res://AssetsMenu/JogoBaú/Key/KeyTriangulo.tres" type="Texture" id=4]
+[ext_resource path="res://AssetsMenu/JogoBaú/Key/KeiQuadrado.tres" type="Texture" id=5]
+[ext_resource path="res://AssetsMenu/JogoBaú/Key/KeiRetangulo.tres" type="Texture" id=6]
+[ext_resource path="res://AssetsMenu/JogoBaú/baú Retangulo.png" type="Texture" id=7]
+[ext_resource path="res://AssetsMenu/JogoBaú/ScenaBaú/JogoBauRetan.gd" type="Script" id=8]
+[ext_resource path="res://AssetsMenu/images.png" type="Texture" id=9]
+[ext_resource path="res://AssetsMenu/Correct2.png" type="Texture" id=10]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+
+[sub_resource type="Animation" id=2]
+resource_name = "Correct"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Correct2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+
+[sub_resource type="Animation" id=3]
+tracks/0/type = "value"
+tracks/0/path = NodePath("XMaior:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("images2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=5]
+tracks/0/type = "value"
+tracks/0/path = NodePath("images3:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="life-on-farm-inside-barn-vector-30694651" type="Sprite" parent="."]
+visible = false
+position = Vector2( 510.213, 357.628 )
+scale = Vector2( 1.02847, 1.45669 )
+texture = ExtResource( 2 )
+
+[node name="farm-barn-house-inside-view-empty-ranch-interior-vector-27244531" type="Sprite" parent="."]
+visible = false
+position = Vector2( 514.372, 301.203 )
+scale = Vector2( 1.02874, 0.772315 )
+texture = SubResource( 1 )
+
+[node name="life-on-farm-inside-barn-vector-30694652" type="Sprite" parent="."]
+position = Vector2( 512.066, 298.557 )
+scale = Vector2( 1.02476, 1.30523 )
+texture = ExtResource( 1 )
+
+[node name="TextureButton" type="Sprite" parent="."]
+position = Vector2( 524.788, 310.693 )
+texture = ExtResource( 7 )
+
+[node name="Retangulo" type="TextureButton" parent="."]
+margin_left = 55.1899
+margin_top = 469.887
+margin_right = 556.19
+margin_bottom = 727.887
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quadrado" type="TextureButton" parent="."]
+margin_left = 302.19
+margin_top = 470.887
+margin_right = 803.19
+margin_bottom = 728.887
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Circulo" type="TextureButton" parent="."]
+margin_left = 553.0
+margin_top = 473.0
+margin_right = 1054.0
+margin_bottom = 731.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Triangulo" type="TextureButton" parent="."]
+margin_left = 788.19
+margin_top = 470.887
+margin_right = 1289.19
+margin_bottom = 728.887
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="images" type="Sprite" parent="."]
+visible = false
+position = Vector2( 355.227, 524.041 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 9 )
+
+[node name="images3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 608.185, 525.928 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 9 )
+
+[node name="images2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 846.041, 524.041 )
+scale = Vector2( 0.732283, 0.711164 )
+texture = ExtResource( 9 )
+
+[node name="XMaior" type="Sprite" parent="."]
+visible = false
+position = Vector2( 546.095, 301.065 )
+scale = Vector2( 3.09772, 3.17406 )
+texture = ExtResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Correct = SubResource( 2 )
+anims/Erro = SubResource( 3 )
+anims/Erro3 = SubResource( 4 )
+anims/erroretangulo = SubResource( 5 )
+
+[node name="Correct2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 635.798, 246.278 )
+scale = Vector2( 1.09534, 1.22033 )
+texture = ExtResource( 10 )
+[connection signal="pressed" from="Retangulo" to="." method="_on_Retangulo_pressed"]
+[connection signal="pressed" from="Quadrado" to="." method="_on_Quadrado_pressed"]
+[connection signal="pressed" from="Circulo" to="." method="_on_Circulo_pressed"]
+[connection signal="pressed" from="Triangulo" to="." method="_on_Triangulo_pressed"]

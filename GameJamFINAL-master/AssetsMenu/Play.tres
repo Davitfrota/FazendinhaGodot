@@ -1,0 +1,10 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/game-buttons-in-cartoon-style-vector-10383126 (1).png-ef25c3d5f2e2a84be32cf8e41d9f520e.stex"
+
+[resource]
+flags = 4
+atlas = SubResource( 1 )
+region = Rect2( 33, 54, 100, 100 )

@@ -1,0 +1,182 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://AssetsMenu/Esquerda.tres" type="Texture" id=1]
+[ext_resource path="res://BackgroundMinigames.png" type="Texture" id=2]
+[ext_resource path="res://AssetsMenu/JogoBaú/d7ac4f669719d96d20046187850049b1-tra--o-de---cone-colorido-de-ba--do-tesouro-by-vexels.png" type="Texture" id=3]
+[ext_resource path="res://AssetsMenu/Music.tres" type="Texture" id=4]
+[ext_resource path="res://AssetsMenu/MusicMute.tres" type="Texture" id=5]
+[ext_resource path="res://AssetsMenu/SAirr.tres" type="Texture" id=7]
+[ext_resource path="res://AseetsJogo/MenuGames2.gd" type="Script" id=8]
+
+[sub_resource type="Animation" id=1]
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0.807843 ), Color( 0, 0, 0, 0.705882 ), Color( 0, 0, 0, 0.631373 ), Color( 0, 0, 0, 0.556863 ), Color( 0, 0, 0, 0.501961 ), Color( 0, 0, 0, 0.45098 ), Color( 0, 0, 0, 0.278431 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Pag"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1024, 0 ), Vector2( -110.503, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Pagesq"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1322, 605 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1323, 0 ), Vector2( -146.66, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0.278431 ), Color( 0, 0, 0, 0.45098 ), Color( 0, 0, 0, 0.556863 ), Color( 0, 0, 0, 0.705882 ), Color( 0, 0, 0, 0.811765 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="BackgroundMinigames" type="Sprite" parent="."]
+position = Vector2( 511.841, 300.08 )
+scale = Vector2( 1.05902, 0.886496 )
+texture = ExtResource( 2 )
+
+[node name="CheckButton" type="CheckButton" parent="." groups=[
+"button",
+]]
+margin_top = 0.000549316
+margin_right = 113.0
+margin_bottom = 108.001
+custom_icons/off = ExtResource( 4 )
+custom_icons/on = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="." groups=[
+"button",
+]]
+margin_left = 365.654
+margin_top = 43.9783
+margin_right = 877.654
+margin_bottom = 555.978
+rect_scale = Vector2( 0.7, 0.7 )
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="TextureButton" parent="." groups=[
+"button",
+]]
+margin_left = 1.58643
+margin_top = 495.704
+margin_right = 102.586
+margin_bottom = 596.704
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 376.366
+margin_top = 303.649
+margin_right = 1296.37
+margin_bottom = 975.649
+rect_scale = Vector2( 0.35, 0.35 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="." groups=[
+"button",
+]]
+margin_left = 1.58643
+margin_top = 255.693
+margin_right = 101.586
+margin_bottom = 356.693
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Entrando = SubResource( 1 )
+anims/Pag = SubResource( 2 )
+anims/Pagesq = SubResource( 3 )
+"anims/Transição" = SubResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -1323.0
+margin_right = -1.0
+margin_bottom = 605.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="toggled" from="CheckButton" to="." method="_on_CheckButton_toggled"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
