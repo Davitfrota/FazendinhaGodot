@@ -2,8 +2,6 @@ extends Node2D
 
 
 func _ready():
-	Music.Baixar()
-	Music.Game1_music()
 	
 	Global.get_buttons_from_scene(self)
 	Controller.set_actual_button($Button)

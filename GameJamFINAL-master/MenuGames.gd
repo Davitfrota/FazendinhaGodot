@@ -35,6 +35,6 @@ func _on_TextureButton_pressed():
 	Global.choose_randomized_game_level(Global.allFruitScenes)
 
 func _on_TextureButton2_pressed():
-	$AnimationPlayer.play("Transição")
+	$AnimationPlayer.play("Pag")
 	yield($AnimationPlayer,"animation_finished")
 	get_tree().change_scene("res://AseetsJogo/MenuGames2.tscn")
